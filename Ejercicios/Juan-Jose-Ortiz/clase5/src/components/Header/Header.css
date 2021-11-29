@@ -1,0 +1,10 @@
+.LogoutLink{
+    cursor: pointer;
+}
+.LogoutLink:hover{
+    background-color: rgb(94, 40, 165);
+    padding: 0 4px;
+    border-radius: 2px;
+    transition: 500ms;
+
+}

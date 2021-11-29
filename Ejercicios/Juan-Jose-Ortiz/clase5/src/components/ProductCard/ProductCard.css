@@ -1,0 +1,27 @@
+.card-container {
+    box-shadow: 0 1px 2px rgba(77, 38, 168, 0.377);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card-container::after {
+    content: '';
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    opacity: 0;
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  /* Scale up the box */
+.card-container:hover {
+    -webkit-box-shadow: 3px 3px 7px 1px #6e428f8f;
+    box-shadow: 3px 3px 7px 1px #6e428f8f;
+    transform: scale(1.02, 1.02);
+  }
+  
+  /* Fade in the pseudo-element with the bigger shadow */
+  .card-container:hover::after {
+    opacity: 1;
+  }
+  
